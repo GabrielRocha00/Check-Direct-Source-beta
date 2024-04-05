@@ -18,7 +18,7 @@
             $matricula = $_GET["matricula"];
                 #echo "<strong>Bem vindo $nome</stro ng>";
 
-                #obs: utilizei variaveis para armazenamento de nomes de matriculas para TESTE
+                #obs: utilizei variaveis para armazenamento de nomes e matriculas para TESTES
             $nomeuser = "gabriel_rocha";
             $matriculauser = "800862";
 
