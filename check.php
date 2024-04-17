@@ -35,8 +35,7 @@
                 echo"Quantidade não confere";
             }
 
-            
-        
+
         ?>
         <p><a href="javascript:history.go(-1)"><input type="submit" value="Voltar para checagem"></a></p>
         <p><a href="javascript:history.go(-3)"><input type="submit" value="Finalizar checagem"></a></p>
