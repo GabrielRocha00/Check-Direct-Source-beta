@@ -15,15 +15,16 @@
         <form action="usuarios.php" method="post">
         
             <label for="usuario">Nome completo</label>
-            <input type="text" name="usuario" id="idnome">
+            <input type="text" name="usuario" id="idnome" required>
 
             <label for="matricula">Matricula</label>
-            <input type="password" name="matricula" id="idmatricula">
+            <input type="password" name="matricula" id="idmatricula" required>
 
             <input type="submit" name="entrar" value="Entrar">
-        
+            <p class="aviso">Caso tenha problema ao logar contacte o gestor da area</p>
         </form>
     </section>
+    
 
     <footer>
     <strong>Desenvolvido por Gabriel Rocha</strong>

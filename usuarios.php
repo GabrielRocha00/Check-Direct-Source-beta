@@ -37,12 +37,12 @@
                 header("Refresh: 3; URL=check.html");
             }
             else {
-                echo"Usuario ou senha incorretos! <br> Aguarde o redirecionamento...";
+                echo"Usuario ou Senha incorreta! <br> Aguarde o redirecionamento...";
                 header("Refresh: 3; URL=loginuser.html");
             }
         }
         ?>
-        <a href="check.html"><input type="submit" value="Continuar"></a>
+
         <p><a href="javascript:history.go(-1)"><input type="submit" value="Sair"></a></p>
         <footer>
             <strong>Desenvolvido por Gabriel Rocha</strong>

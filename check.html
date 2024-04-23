@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DS - CHECK 1.0</title>
     <link rel="stylesheet" href="style.css">
-        
 </head>
+
 <body>
     <header>
-        <h1>Direct Source v1.1</h1> 
+        <h1>Direct Source v1.1</h1>
     </header>
-    
+
     <section>
 
         <form action="check.php" method="get">
             <label for="checkorigem">Etiqueta Origem</label>
-            <input type="text" name="checkorigem" id="idcheck">
+            <input type="text" name="checkorigem" id="idcheck" required>
 
             <label for="codigods">Etiqueta DS</label>
-            <input type="text" name="etiquetads" id="idds">
-                <br>
-                <br>
+            <input type="text" name="etiquetads" id="idds" required>
+            <br>
+            <br>
 
             <label for="qtdorigem">Qtd. Peças Origem</label>
-            <input type="text" name="qtdorigem" id="idqtdorigem">
+            <input type="text" name="qtdorigem" id="idqtdorigem" required>
 
             <label for="text" name="qtdds">Qtd. peças DS</label>
-            <input type="text" name="qtdds" id="idqtdds"> 
+            <input type="text" name="qtdds" id="idqtdds" required>
 
             <input type="submit" value="Checar">
 
@@ -35,6 +36,7 @@
     </section>
     <footer>
         <strong>Desenvolvido por Gabriel Rocha</strong>
-        </footer>
+    </footer>
 </body>
+
 </html>

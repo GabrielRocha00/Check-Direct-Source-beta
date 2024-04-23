@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direct Source</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Checagem de Peças</h1>
     </header>
 
     <main>
-                
-        <?php 
-            $checkorigem = $_GET["checkorigem"];
-            $codigods = $_GET["etiquetads"];
 
-            if ($checkorigem == $codigods){
-                echo"Codigo e ";
-            }
-            else{
-                echo"Codigo NÃO confere e ";
-            }
+        <?php
+        
+        $checkorigem = $_GET["checkorigem"];
+        $codigods = $_GET["etiquetads"];
 
-            $qtdorigem = $_GET["qtdorigem"];
-            $qtdds = $_GET["qtdds"];
+        if ($checkorigem == $codigods) {
+            echo "Codigo e ";
+        } else {
+            echo "Codigo NÃO confere e ";
+        }
 
-            if($qtdorigem == $qtdds){
-                echo "Quantidade OK ";
-            }
-            
-            else{
-                echo"Quantidade não confere";
-            }
+        ##CHECAGEM DE QUANTIDADE DE PEÇAS 
+        $qtdorigem = $_GET["qtdorigem"];
+        $qtdds = $_GET["qtdds"];
+
+        if ($qtdorigem == $qtdds) {
+            echo "Quantidade OK ";
+        } else {
+            echo "Quantidade não confere";
+        }
 
 
         ?>
@@ -45,4 +46,5 @@
         </footer>
     </main>
 </body>
+
 </html>
