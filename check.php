@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direct Source</title>
+    <title>Direct Source BETA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +16,7 @@
     <main>
 
         <?php
-        
+
         $checkorigem = $_GET["checkorigem"];
         $codigods = $_GET["etiquetads"];
 

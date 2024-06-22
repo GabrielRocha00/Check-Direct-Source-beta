@@ -14,11 +14,12 @@
     </header>
     <main>
         <?php
-        # var_dump($_GET); // $_GET  $_POST $_COOKIES ($_REQUEST , É JUNÇÃO DE TODAS AS VARIAVEIS CITADAS)
         $usuarios = array(
             array("usuario" => "gabriel_rocha", "matricula" => "800862"),
             array("usuario" => "ana_paula", "matricula" => "121212"),
-            array("usuario" => "gabriel_machado", "matricula" => "202020")
+            array("usuario" => "gabriel_machado", "matricula" => "202020"),
+            array("usuario" => "admin", "matricula" => "admin")
+
         );
         
         function validarUsuario($usuario, $senha, $listaUsuarios) {
@@ -37,7 +38,7 @@
                 header("Refresh: 3; URL=check.html");
             }
             else {
-                echo"Usuario ou Senha incorreta! <br> Aguarde o redirecionamento...";
+                echo"Usuario ou Senha incorretos! <br> Aguarde o redirecionamento...";
                 header("Refresh: 3; URL=loginuser.html");
             }
         }
